@@ -1,6 +1,15 @@
 # Keras One Cycle Policy
 
-Implementation of some of the very effective tools for training Deep Learning (DL) models that I came across while doing the fastai course on [Practical Deep Learning for Coders](https://course.fast.ai/). 
+Implementation of some of the very effective tools for training Deep Learning (DL) models that I came across while doing the fastai course on [Practical Deep Learning for Coders](https://course.fast.ai/).
+
+Forked from the https://github.com/shivam-agarwal-17/Keras-training-tools to fix a bug involving the param scheduler.
+
+To implement this,
+```bash
+pip install git+https://github.com/aslw26/keras-one-cycle-policy.git
+```
+
+Call the perform a LR Find on the cloned model and apply the fit one cycle scheduler subsequently. 
 
 The tools were first presented in the following papers by Leslie N. Smith:
 - LR Finder: [A disciplined approach to neural network hyper-parameters: Part 1 -- learning rate, batch size, momentum, and weight decay](https://arxiv.org/abs/1803.09820)
@@ -11,5 +20,4 @@ My implementations are a port of the code in [fastai library](https://github.com
 - https://github.com/surmenok/keras_lr_finder
 - https://github.com/titu1994/keras-one-cycle
 
-Here's another article I referred to: [How Do You Find A Good Learning Rate](https://sgugger.github.io/how-do-you-find-a-good-learning-rate.html) by Sylvain Gugger of fastai which provides an intuitive understanding of how fastai's LR finder works. 
-
+Here's another article I referred to: [How Do You Find A Good Learning Rate](https://sgugger.github.io/how-do-you-find-a-good-learning-rate.html) by Sylvain Gugger of fastai which provides an intuitive understanding of how fastai's LR finder works.
